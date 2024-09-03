@@ -22,18 +22,18 @@ const Navbar = () => {
                 <h1 className="text-[1.8em] font-bold font-[Libre Baskerville] italic">
                     Digi <span className="text-green-500 font-extrabold">Market</span>
                 </h1>
-                <section className="flex items-center justify-center gap-x-8">
+                <section className="flex items-center justify-center gap-x-8 hover:text-red-600 hover:font-bold transition-all">
                     <h1
                         className={`relative flex justify-center items-center gap-x-3 px-4 cursor-pointer ${isCartAnimation ? 'animate-cart' : ''}`}
                         onClick={openCart}
                     >
-                        <FaShoppingCart className="relative" />
+                        <FaShoppingCart className="relative " />
                         {totalItems > 0 && (
                             <span className="absolute top-[2px] right-[-10px] text-white text-lg bg-gray-800 font-bold rounded-full w-5 h-5 flex items-center justify-center p-2">
                                 {totalItems}
                             </span>
                         )}
-                        <span>Cart</span>
+                        <span className="text-gray-900  font-medium hover:text-red-600 transition-all ">Cart</span>
                     </h1>
                 </section>
             </nav>
