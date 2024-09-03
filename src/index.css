@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Playwrite+CU:wght@100..400&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes cartAnimation {
+    0% {
+        transform: scale(1);
+        background-color: transparent;
+    }
+    50% {
+        transform: scale(1.2);
+        background-color: rgba(255, 0, 0, 0.1);
+    }
+    100% {
+        transform: scale(1);
+        background-color: transparent;
+    }
+}
+
+.animate-cart {
+    animation: cartAnimation 0.5s ease;
+}
