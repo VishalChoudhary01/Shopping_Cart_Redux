@@ -82,7 +82,7 @@ const Cart = ({ isOpen, onClose }) => {
                                         Total Quantity: <span className="ml-1 font-semibold text-gray-900">{totalQuantity}</span> 
                                     </section>
                                     <section className="text-[1.2em] text-gray-700 font-semibold">
-                                        Grand Total: <span>₹</span> <span>{new Intl.NumberFormat('en-IN',{maximumSignificantDigits:3}).format(totalPrice)}</span>
+                                        Grand Total: <span className="text-[0.8em]">₹</span> <span>{new Intl.NumberFormat('en-IN',{maximumSignificantDigits:3}).format(totalPrice)}</span>
                                     </section>
                                 </ul>
                             )}
