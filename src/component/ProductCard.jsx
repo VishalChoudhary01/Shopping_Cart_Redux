@@ -27,7 +27,7 @@ const ProductCard = ({ onAddToCart }) => {
                                 <span>{product.name.slice(0, 18)}</span>
                                 <span className="flex items-center font-bold text-gray-600">
                                     <span>₹</span>
-                                    <span>{product.price}</span>
+                                    <span>{new Intl.NumberFormat('en-IN',{maximumSignificantDigits:3}).format(product.price)}</span>
                                 </span>
                             </p>
                             <p>

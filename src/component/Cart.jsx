@@ -49,7 +49,7 @@ const Cart = ({ isOpen, onClose }) => {
                                             <section className="w-[70%]">
                                                 <h3 className="text-[0.8em] font-bold">{item.name}</h3>
                                                 <section className="">
-                                            <p className="text-[0.8em] font-medium text-gray-600"><span>₹</span>{item.price} X {item.quantity} = <span>₹</span> <span>{item.totalPrice}</span></p> 
+                                            <p className="text-[0.8em] font-medium text-gray-600"><span>₹</span>{new Intl.NumberFormat('en-IN',{maximumSignificantDigits:3}).format(item.price)} X {item.quantity} = <span>₹</span> <span>{new Intl.NumberFormat('en-IN',{maximumSignificantDigits:3}).format(item.totalPrice)}</span></p> 
                                                 </section>
                                             </section>
                                             <section className="flex w-[30%] gap-x-3 items-center">
@@ -82,7 +82,7 @@ const Cart = ({ isOpen, onClose }) => {
                                         Total Quantity: <span className="ml-1 font-semibold text-gray-900">{totalQuantity}</span> 
                                     </section>
                                     <section className="text-lg text-gray-700 font-semibold">
-                                        Grand Total: <span>₹</span> <span>{totalPrice}</span>
+                                        Grand Total: <span>₹</span> <span>{new Intl.NumberFormat('en-IN',{maximumSignificantDigits:3}).format(totalPrice)}</span>
                                     </section>
                                 </ul>
                             )}
