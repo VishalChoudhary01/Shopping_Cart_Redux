@@ -15,17 +15,6 @@ const Navbar = () => {
 
     const totalItems = cartItems.reduce((total, item) => total + item.quantity, 0);
 
-    const triggerCartAnimation = () => {
-        setCartAnimation(true);
-        setTimeout(() => setCartAnimation(false), 500); // Reset animation after 0.5s
-    };
-
-    // No need for handleAddToCart here; handle it in ProductCard
-    // This is just a dummy function to demonstrate the animation triggering
-    const handleAddToCart = (product) => {
-        dispatch(addItemToCart(product));
-        triggerCartAnimation();
-    };
 
     return (
         <>
