@@ -24,8 +24,8 @@ const ProductCard = ({ onAddToCart }) => {
                         <section className="bg-stone-700 rounded-md w-full h-[70%] hover:bg-stone-800"></section>
                         <section className="w-full h-[30%] flex flex-col items-center justify-center">
                             <p className="flex items-center justify-center font-semibold text-[0.6em] gap-x-1 pb-1">
-                                <span>{product.name.slice(0, 25)}</span>
-                                <span className="flex items-center font-bold text-gray-600">
+                                <span className="text-gray-900 font-sans lg:text-[1.1em] md:text-[1em] text-[0.9em] font-semibold">{product.name.slice(0, 25)}</span>
+                                <span className="flex items-center font-bold text-gray-800 lg:text-[1.3em] md:text-[1.1em] text-[1em]">
                                     <span>₹</span>
                                     <span>{new Intl.NumberFormat('en-IN',{maximumSignificantDigits:3}).format(product.price)}</span>
                                 </span>
