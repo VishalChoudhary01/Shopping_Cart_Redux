@@ -26,7 +26,7 @@ const Cart = ({ isOpen, onClose }) => {
         <>
             {isOpen && (
                 <section
-                    className="fixed inset-0 bg-gray-900 bg-opacity-50 z-40"
+                    className="fixed inset-0 bg-gray-900 backdrop-blur-sm bg-opacity-50 z-40"
                     onClick={onClose}
                 >
                     <section
@@ -35,7 +35,7 @@ const Cart = ({ isOpen, onClose }) => {
                         }`}
                         onClick={(e) => e.stopPropagation()} // Prevent click propagation to close the modal unintentionally
                     >
-                        <section className="p-4 sm:p-0">
+                        <section className="lg:p-4 md:p-2 sm:p-1">
                             <button onClick={onClose} className="text-red-500 w-full flex justify-end lg:text-[1.6em] md:text-[1.5em] text-[1.4em]"><RiCloseLargeLine/></button>
                             <h1 className="lg:text-[1.3em] md:text-[1.2em] text-[1.1em] font-bold uppercase font-sans tracking-wider lg:text-justify text-center">Cart</h1>
                             {cartItems.length === 0 ? (
