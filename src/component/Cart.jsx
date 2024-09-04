@@ -26,7 +26,7 @@ const Cart = ({ isOpen, onClose }) => {
         <>
             {isOpen && (
                 <section
-                    className="fixed inset-0 bg-gray-900 backdrop-blur-sm bg-opacity-50 z-40"
+                    className="fixed inset-0 h-screen bg-gray-900 backdrop-blur-sm bg-opacity-50 z-40"
                     onClick={onClose}
                 >
                     <section
