@@ -26,7 +26,7 @@ const Navbar = () => {
                     >
                         <FaShoppingCart className="relative lg:text-[1.3em] md:text-[1.1em] text-[1em]" />
                         {totalItems > 0 && (
-                            <span className="absolute top-[2px] right-[-10px] text-white text-[0.8em] bg-gray-800 font-bold rounded-full w-6 h-6 flex items-center justify-center p-2">
+                            <span className="absolute lg:top-[2px] top-[0px] right-[-10px] text-white text-[0.8em] bg-gray-800 font-bold rounded-full w-6 h-6 flex items-center justify-center p-2">
                                 {totalItems}
                             </span>
                         )}
