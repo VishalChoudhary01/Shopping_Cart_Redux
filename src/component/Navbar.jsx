@@ -17,7 +17,7 @@ const Navbar = () => {
             <nav className="sticky top-0 z-30 bg-neutral-100 bg-opacity-65 backdrop-blur-md w-full border-b border-gray-700 flex items-center justify-between py-3 lg:px-6 md:px-4 px-3">
                 <h1 className="lg:text-[1.8em] md:text-[1.4em] text-[1.2em] font-bold  ">
                     <span className="font-[Electrolize] font-extrabold text-neutral-800">DIGI </span>
-                     <span className="text-sky-600 font-extrabold font-[Libre Baskerville]  italic">Market</span>
+                     <span className="text-sky-600 font-extrabold font-[Libre Baskerville]">Market</span>
                 </h1>
                 <section className="flex items-center justify-center gap-x-8 hover:text-red-600 hover:font-bold transition-all">
                     <h1
