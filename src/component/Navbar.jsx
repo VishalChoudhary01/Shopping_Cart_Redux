@@ -24,13 +24,13 @@ const Navbar = () => {
                         className="relative flex justify-center items-center gap-x-3 px-4 cursor-pointer"
                         onClick={openCart}
                     >
-                        <FaShoppingCart className="relative lg:text-[1.4em] md:text-[1.3em] text-[1em]" />
+                        <FaShoppingCart className="relative lg:text-[1.3em] md:text-[1.1em] text-[1em]" />
                         {totalItems > 0 && (
                             <span className="absolute top-[2px] right-[-10px] text-white text-[0.8em] bg-gray-800 font-bold rounded-full w-6 h-6 flex items-center justify-center p-2">
                                 {totalItems}
                             </span>
                         )}
-                        <span className="text-gray-900 lg:text-[1.4em] md:text-[1.3em] text-[1em] font-medium hover:text-red-600 transition-all">Cart</span>
+                        <span className="text-gray-900 lg:text-[1.3em] md:text-[1.1em] text-[1em] font-medium hover:text-red-600 transition-all">Cart</span>
                     </h1>
                 </section>
             </nav>
