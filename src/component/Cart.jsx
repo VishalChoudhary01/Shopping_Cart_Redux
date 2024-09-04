@@ -35,7 +35,7 @@ const Cart = ({ isOpen, onClose }) => {
                         }`}
                         onClick={(e) => e.stopPropagation()} // Prevent click propagation to close the modal unintentionally
                     >
-                        <section className="p-4">
+                        <section className="p-4 sm:p-0">
                             <button onClick={onClose} className="text-red-500 w-full flex justify-end lg:text-[1.6em] md:text-[1.5em] text-[1.4em]"><RiCloseLargeLine/></button>
                             <h1 className="lg:text-[1.3em] md:text-[1.2em] text-[1.1em] font-bold uppercase font-sans tracking-wider lg:text-justify text-center">Cart</h1>
                             {cartItems.length === 0 ? (
@@ -52,7 +52,7 @@ const Cart = ({ isOpen, onClose }) => {
                                             <p className="text-[0.8em] font-medium text-gray-600"><span>₹</span>{new Intl.NumberFormat('en-IN',{maximumSignificantDigits:3}).format(item.price)} X {item.quantity} = <span>₹</span> <span>{new Intl.NumberFormat('en-IN',{maximumSignificantDigits:3}).format(item.totalPrice)}</span></p> 
                                                 </section>
                                             </section>
-                                            <section className="flex w-[30%] gap-x-3 items-center">
+                                            <section className="flex w-[30%] lg:gap-x-3 gap-x-1  items-center">
                                                 <section className="flex w-full justify-end">
                                                 <button
                                                     className="text-lg text-gray-500 hover:text-xl transition-all"
