@@ -30,12 +30,12 @@ const Cart = ({ isOpen, onClose }) => {
                     onClick={onClose}
                 >
                     <section
-                        className={`fixed top-0 right-0 lg:w-1/4 md:w-[60%] w-[65%] h-full bg-white shadow-lg z-50 transform transition-transform duration-300 ${
+                        className={`fixed top-0 right-0 lg:w-1/4 md:w-[60%] w-[65%] h-screen bg-white shadow-lg z-50 transform transition-transform duration-300 ${
                             isOpen ? "translate-x-0" : "-translate-x-full"
                         }`}
                         onClick={(e) => e.stopPropagation()} // Prevent click propagation to close the modal unintentionally
                     >
-                        <section className="lg:p-4 p-2 lg:mr-0 sm:mr-2">
+                        <section className="lg:p-4 p-2 lg:mr-0 md:mr-1 mr-3">
                             <button onClick={onClose} className="text-red-500 w-full flex justify-end lg:text-[1.6em] md:text-[1.5em] text-[1.4em]"><RiCloseLargeLine/></button>
                             <h1 className="lg:text-[1.3em] md:text-[1.2em] text-[1.1em] font-bold uppercase font-sans tracking-wider lg:text-justify text-center">Cart</h1>
                             {cartItems.length === 0 ? (
