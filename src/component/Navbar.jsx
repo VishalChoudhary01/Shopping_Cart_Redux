@@ -15,7 +15,7 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className="sticky top-0 z-30 bg-neutral-100 bg-opacity-65 backdrop-blur-md w-full border-b border-gray-700 flex items-center justify-between py-3 lg:px-6 md:px-4 px-2">
+            <nav className="sticky top-0 z-30 bg-neutral-100 bg-opacity-65 backdrop-blur-md w-full border-b border-gray-700 flex items-center justify-between py-3 lg:px-6 md:px-4 px-3">
                 <h1 className="lg:text-[1.8em] md:text-[1.4em] text-[1.2em] font-bold font-[Libre Baskerville] italic">
                     Digi <span className="text-green-500 font-extrabold">Market</span>
                 </h1>
@@ -24,13 +24,13 @@ const Navbar = () => {
                         className="relative flex justify-center items-center gap-x-3 px-4 cursor-pointer"
                         onClick={openCart}
                     >
-                        <FaShoppingCart className="relative lg:text-[1.6em] md:text-[1.3em] text-[1em]" />
+                        <FaShoppingCart className="relative lg:text-[1.4em] md:text-[1.3em] text-[1em]" />
                         {totalItems > 0 && (
                             <span className="absolute top-[2px] right-[-10px] text-white text-[0.8em] bg-gray-800 font-bold rounded-full w-6 h-6 flex items-center justify-center p-2">
                                 {totalItems}
                             </span>
                         )}
-                        <span className="text-gray-900 lg:text-[1.6em] md:text-[1.3em] text-[1em] font-medium hover:text-red-600 transition-all">Cart</span>
+                        <span className="text-gray-900 lg:text-[1.4em] md:text-[1.3em] text-[1em] font-medium hover:text-red-600 transition-all">Cart</span>
                     </h1>
                 </section>
             </nav>
