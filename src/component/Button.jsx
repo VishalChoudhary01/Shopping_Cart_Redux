@@ -2,7 +2,7 @@
 import Prop_Types from 'prop-types'
 const Button = ({buttonContent,buttonStyle,buttonEvent,buttonDisabled}) => {
   return (
-    <button className={`${buttonStyle} rounded-md py-2 px-3 font-semibold`} onClick={buttonEvent} disabled={buttonDisabled}>{buttonContent}</button>
+    <button className={`${buttonStyle} rounded-md  font-semibold`} onClick={buttonEvent} disabled={buttonDisabled}>{buttonContent}</button>
   )
 }
 
