@@ -36,8 +36,8 @@ const Cart = ({ isOpen, onClose }) => {
                         onClick={(e) => e.stopPropagation()} // Prevent click propagation to close the modal unintentionally
                     >
                         <section className="p-4">
-                            <button onClick={onClose} className="text-red-500 w-full flex justify-end text-2xl"><RiCloseLargeLine/></button>
-                            <h1 className="text-2xl font-bold">Cart</h1>
+                            <button onClick={onClose} className="text-red-500 w-full flex justify-end lg:text-[1.6em] md:text-[1.5em] text-[1.4em]"><RiCloseLargeLine/></button>
+                            <h1 className="lg:text-[1.3em] md:text-[1.2em] text-[1.1em] font-bold uppercase font-sans tracking-wider lg:text-justify text-center">Cart</h1>
                             {cartItems.length === 0 ? (
                                 <section className="w-full text-center">
                                     <p className="mt-4 font-semibold text-[1.2em] text-gray-500">Your Cart is Empty</p>
